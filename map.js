@@ -218,7 +218,7 @@ map.on("load", function () {
       },
     });
   }
-  
+
   map.addLayer({
     'id': 'CentralValley',
     'type': 'fill',
@@ -237,6 +237,8 @@ map.on("load", function () {
     },
     "waterway-label"
   );
+
+
 
   map.addLayer({
     'id': 'Almond',
@@ -258,14 +260,16 @@ map.on("load", function () {
       }
       
     },
-  );
+);
+
+
 
 map.addLayer({
   id: "counties_drought_outline",
   type: "line",
   source: {
     type: "geojson",
-    data: "Data/countiesData.geojson",
+    data: "data/countiesData.geojson",
   },
   paint: {
     "line-color": "#ffffff",
@@ -281,7 +285,7 @@ map.addLayer(
     type: "fill",
     source: {
       type: "geojson",
-      data: "Data/countiesData.geojson",
+      data: "data/countiesData.geojson",
     },
     paint: {
       "fill-color": 
